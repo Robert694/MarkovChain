@@ -22,9 +22,6 @@ var result = chain.Trainer.Generate(options).TakeWhile(v => v != "\r");
 
 Example Program output: 
 ```
-Order: 8
-MaxLength: 250
-
 In other words, conditional on the state at discrete-time Markov process's full history.
 -----------------------------------------------------------------------------------------
 In other words, conditional on the present state at discrete-time Markov chain (DTMC).
