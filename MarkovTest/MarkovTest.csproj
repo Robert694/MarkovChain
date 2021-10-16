@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Markov.KeyGen\Markov.KeyGen.csproj" />
+    <ProjectReference Include="..\Markov.Random\Markov.Random.csproj" />
+    <ProjectReference Include="..\Markov.Storage.File\Markov.Storage.File.csproj" />
+    <ProjectReference Include="..\Markov.Storage.LiteDB\Markov.Storage.LiteDB.csproj" />
+    <ProjectReference Include="..\Markov.Storage.SQLite\Markov.Storage.SQLite.csproj" />
+    <ProjectReference Include="..\Markov.Storage\Markov.Storage.csproj" />
+    <ProjectReference Include="..\Markov.Trainer\Markov.Trainer.csproj" />
+    <ProjectReference Include="..\Markov\Markov.csproj" />
+  </ItemGroup>
+
+</Project>
