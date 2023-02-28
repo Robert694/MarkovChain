@@ -21,7 +21,7 @@ namespace Markov.Storage.LiteDB
         }
 
         public LiteDatabase Database { get; }
-        public LiteCollection<Data> Collection { get; }
+        public ILiteCollection<Data> Collection { get; }
 
         public bool Contains(string key)
         {
